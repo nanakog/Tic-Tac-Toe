@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0ae2a92d648ff1845bd65c3a92e00866
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - xSprite: {instanceID: 0}
+  - oSprite: {instanceID: 0}
+  - x0_red: {fileID: 5800915590215233699, guid: 913ce6d076627094fa647b3c34770db1, type: 3}
+  - o0_black: {fileID: -4543041181297324008, guid: 913ce6d076627094fa647b3c34770db1, type: 3}
+  - x1_blue: {fileID: 5828903514592741260, guid: 913ce6d076627094fa647b3c34770db1, type: 3}
+  - o1_yellow: {fileID: -5029703094226174211, guid: 913ce6d076627094fa647b3c34770db1, type: 3}
+  - x2_green: {fileID: -5671269848223593115, guid: 913ce6d076627094fa647b3c34770db1, type: 3}
+  - o2_violet: {fileID: -1950665664707622766, guid: 913ce6d076627094fa647b3c34770db1, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
