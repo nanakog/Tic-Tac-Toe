@@ -24,8 +24,19 @@ public class UIManager : MonoBehaviour {
     
     public TMP_Text p2MovesText;
 
+
     private void Start() {
         resultPopup.SetActive(false);
+
+        //if (Screen.width > Screen.height)
+        //{
+        //    hudPanel.sizeDelta = new Vector2(0, 70);
+        //}
+        //else
+        //{
+        //    hudPanel.sizeDelta = new Vector2(0, 120);
+        //}
+
     }
 
     private void Awake() {
