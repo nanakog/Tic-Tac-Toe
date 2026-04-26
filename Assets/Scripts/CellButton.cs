@@ -30,7 +30,6 @@ public class CellButton : MonoBehaviour {
         Sprite spriteToUse = GameManager.Instance.GetCurrentSprite();
 
         markImage.sprite = spriteToUse;
-        Debug.Log("Sprite to use: " + spriteToUse.name);
         markImage.gameObject.SetActive(true);
 
         UIManager.Instance.RegisterMove(GameManager.Instance.playerOneTurn);

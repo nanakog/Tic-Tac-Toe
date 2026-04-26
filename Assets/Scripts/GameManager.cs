@@ -11,10 +11,6 @@ public class GameManager : MonoBehaviour {
     
     private int moveCount = 0;
 
-    public Sprite xSprite;
-    
-    public Sprite oSprite;
-
     public Sprite x0_red;
 
     public Sprite o0_black;
@@ -55,33 +51,6 @@ public class GameManager : MonoBehaviour {
     {
         return gameOver;
     }
-
-    //public void MakeMove(int index)
-    //{
-    //    if (gameOver) return;
-
-    //    board[index] = GetCurrentMark();
-    //    moveCount++;
-
-    //    if (CheckWin())
-    //    {
-    //        gameOver = true;
-    //        Debug.Log(GetCurrentMark() + " Wins!");
-    //        string winner = GetCurrentMark() == "X" ? "Player 1 Wins!" : "Player 2 Wins!";
-    //        UIManager.Instance.ShowResult(winner);
-    //        return;
-    //    }
-
-    //    if (moveCount >= 9)
-    //    {
-    //        gameOver = true;
-    //        UIManager.Instance.ShowResult("Draw!");
-    //        Debug.Log("Draw!");
-    //        return;
-    //    }
-
-    //    playerOneTurn = !playerOneTurn;
-    //}
 
     public void MakeMove(int index) {
         if (gameOver) return;
@@ -148,29 +117,18 @@ public class GameManager : MonoBehaviour {
         return false;
     }
 
-    //public Sprite GetCurrentSprite()
-    //{
-    //    return playerOneTurn ? xSprite : oSprite;
-    //}
     public Sprite GetCurrentSprite() {
         int theme = PlayerPrefs.GetInt("ThemeIndex", 0);
-
-        Debug.Log("ThemeIndex = " + theme);
-        Debug.Log("PlayerOneTurn = " + playerOneTurn);
-        Debug.Log("x0_red = " + x0_red);
-        Debug.Log("o0_black = " + o0_black);
 
         if (playerOneTurn == true) {
             if (theme == 0) return x0_red;
             if (theme == 1) return x1_blue;
             if (theme == 2) return x2_green;
-
             return x0_red;
         } else {
             if (theme == 0) return o0_black;
             if (theme == 1) return o1_yellow;
             if (theme == 2) return o2_violet;
-
             return o0_black;
         }
     }

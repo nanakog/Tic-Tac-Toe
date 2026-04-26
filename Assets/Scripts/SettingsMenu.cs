@@ -2,9 +2,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour {
+
     public GameObject settingsPopup;
 
     public Toggle musicToggle;
+    
     public Toggle sfxToggle;
 
     private void Start() {
@@ -29,7 +31,6 @@ public class SettingsMenu : MonoBehaviour {
         PlayerPrefs.Save();
         AudioManager.Instance.ApplySettings();
 
-        Debug.Log("Music changed to: " + isOn);
     }
 
     public void ToggleSFX() {
@@ -39,7 +40,6 @@ public class SettingsMenu : MonoBehaviour {
         PlayerPrefs.Save();
         AudioManager.Instance.ApplySettings();
 
-        Debug.Log("SFX changed to: " + isOn);
     }
 
     void LoadSettings() {

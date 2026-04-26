@@ -2,8 +2,8 @@ using UnityEngine;
 using TMPro;
 
 public class MainMenuStats : MonoBehaviour {
+
     public GameObject statsPopup;
-    //public TMP_Text statsText;
 
     public TMP_Text totalGames;
     
@@ -17,14 +17,7 @@ public class MainMenuStats : MonoBehaviour {
 
     public void OpenStats() {
         float avg = StatsManager.GetAverageTime();
-
-        //statsText.text =
-        //    "Total Games: " + StatsManager.GetTotalGames() + "\n" +
-        //    "Player 1 Wins: " + StatsManager.GetP1Wins() + "\n" +
-        //    "Player 2 Wins: " + StatsManager.GetP2Wins() + "\n" +
-        //    "Draws: " + StatsManager.GetDraws() + "\n" +
-        //    "Average Time: " + avg.ToString("0.0") + " sec";
-
+              
         totalGames.text = "Total Games: " + StatsManager.GetTotalGames();
         p1Wins.text = "Player 1 Wins: " + StatsManager.GetP1Wins();
         p2Wins.text = "Player 2 Wins: " + StatsManager.GetP2Wins();

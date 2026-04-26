@@ -1,19 +1,4 @@
-//using UnityEngine;
-//using UnityEngine.UI;
 
-//public class AutoButtonSound : MonoBehaviour {
-//    void Start() {
-//        Button[] buttons = FindObjectsByType<Button>();// FindObjectsOfType<Button>(true);
-
-//        foreach (Button btn in buttons) {
-//            btn.onClick.AddListener(() =>
-//            {
-//                if (AudioManager.Instance != null)
-//                    AudioManager.Instance.PlayButton();
-//            });
-//        }
-//    }
-//}
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
@@ -27,8 +12,7 @@ public class AutoButtonSound : MonoBehaviour {
     }
 
     IEnumerator CheckButtonsRoutine() {
-        while (true)
-        {
+        while (true) {
             HookAllButtons();
             yield return new WaitForSeconds(0.5f);
         }

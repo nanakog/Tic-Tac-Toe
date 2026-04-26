@@ -27,16 +27,6 @@ public class UIManager : MonoBehaviour {
 
     private void Start() {
         resultPopup.SetActive(false);
-
-        //if (Screen.width > Screen.height)
-        //{
-        //    hudPanel.sizeDelta = new Vector2(0, 70);
-        //}
-        //else
-        //{
-        //    hudPanel.sizeDelta = new Vector2(0, 120);
-        //}
-
     }
 
     private void Awake() {
@@ -55,11 +45,6 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    //public void ShowResult(string message) {
-    //    resultText.text = message;
-    //    resultPopup.SetActive(true);
-    //}
-
     public void ShowResult(string message) {
         timerRunning = false;
         resultText.text = message;
@@ -67,7 +52,6 @@ public class UIManager : MonoBehaviour {
     }
 
     public void RetryGame() {
-        Debug.Log("Retrying game...");
         SceneManager.LoadScene("Game");
     }
 

@@ -3,7 +3,9 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ThemeSelector : MonoBehaviour {
+
     public GameObject themePopup;
+
     public TMP_Dropdown themeDropdown;
 
     public void OpenPopup() {

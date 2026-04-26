@@ -2,6 +2,7 @@ using UnityEngine;
 
 public static class StatsManager {
     public static void AddGame(float duration, int winner) {
+
         int totalGames = PlayerPrefs.GetInt("TotalGames", 0);
         PlayerPrefs.SetInt("TotalGames", totalGames + 1);
 
