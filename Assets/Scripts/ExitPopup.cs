@@ -13,6 +13,9 @@ public class ExitPopup : MonoBehaviour {
     }
 
     public void QuitGame() {
+        // I did not find how to make this work. Application.Quit() freezes the app
+        // might just close popup and let user close the app manually
         Application.Quit();
+        Debug.Log("Quit Game");
     }
 }
