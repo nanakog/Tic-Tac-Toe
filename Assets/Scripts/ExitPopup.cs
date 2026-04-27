@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using static System.Net.WebRequestMethods;
 
 public class ExitPopup : MonoBehaviour {
     public GameObject exitPopup;
@@ -18,6 +19,8 @@ public class ExitPopup : MonoBehaviour {
         // might just close popup and let user close the app manually
         ClosePopup();
         Application.Quit();
-        Debug.Log("Quit Game");
+        //Application.OpenURL("https://play.unity.com/en/games/3b567a01-308e-48b9-9222-e71b57ea26a3/tic-tac-toe");
+        //Application.ExternalEval("window.open('" + "https://play.unity.com/en/games/3b567a01-308e-48b9-9222-e71b57ea26a3/tic-tac-toe" + "','_self')");
+        //Debug.Log("Quit Game");
     }
 }
